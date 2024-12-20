@@ -19,7 +19,7 @@ func AddHandler(w http.ResponseWriter, r *http.Request) {
 		sum += num
 	}
 
-	resp := models.AddResponse{Result: sum, Message: "success"}
+	resp := models.Response{Result: sum, Message: "success"}
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
 }

@@ -16,7 +16,7 @@ func SubtractHandler(w http.ResponseWriter, r *http.Request) {
 
 	difference := req.A - req.B
 
-	resp := models.SubtractResponse{Result: difference, Message: "success"}
+	resp := models.Response{Result: difference, Message: "success"}
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
 }

@@ -16,7 +16,7 @@ func MultiplyHandler(w http.ResponseWriter, r *http.Request) {
 
 	product := req.A * req.B
 
-	resp := models.MultiplyResponse{Result: product, Message: "success"}
+	resp := models.Response{Result: product, Message: "success"}
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
 }
