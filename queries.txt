@@ -1,0 +1,17 @@
+curl -X POST http://localhost:8080/is-prime \
+     -H "Content-Type: application/json" \
+     -d '{"number": 7}'
+
+
+curl -X POST http://localhost:8080/add \
+     -H "Content-Type: application/json" \
+     -d '{"numbers": [1, 2, 3, 4]}'
+
+curl -X POST http://localhost:8080/multiply \
+     -H "Content-Type: application/json" \
+     -d '{"a": 3, "b": 5}'
+
+
+curl -X POST http://localhost:8080/subtract \
+     -H "Content-Type: application/json" \
+     -d '{"a": 10, "b": 3}'
